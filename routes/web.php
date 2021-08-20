@@ -13,13 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-use App\http\Controllers\gyltechController;
+use App\http\Controllers\gyltech;
 
-Route::get('/', [gyltechController::class, 'index']);
-Route::get('/redes', [gyltechController::class, 'redes']);
-Route::get('/programacao', [gyltechController::class, 'programacao']);
-Route::get('/it', [gyltechController::class, 'it']);
-Route::get('/bi', [gyltechController::class, 'bi']);
-Route::get('/train', [gyltechController::class, 'train']);
-Route::get('/design', [gyltechController::class, 'design']);
-Route::get('/sobre', [gyltechController::class, 'sobre']);
+Route::get('/', [gyltech::class, 'index']);
+Route::get('/redes', [gyltech::class, 'redes']);
+Route::get('/programacao', [gyltech::class, 'programacao']);
+Route::get('/it', [gyltech::class, 'it']);
+Route::get('/bi', [gyltech::class, 'bi']);
+Route::get('/train', [gyltech::class, 'train']);
+Route::get('/design', [gyltech::class, 'design']);
+Route::get('/sobre', [gyltech::class, 'sobre']);
